@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int ignition;
+    int consecutive_on = 0;
+    int max_on = 0;
+
+    for(int i = 1; i <= 10; i++)
+    {
+        printf("Cycle %d - Enter ignition (1=ON, 0=OFF): ", i);
+        scanf("%d", &ignition);
+
+        if(ignition == 1)
+        {
+            consecutive_on++;
+
+            if(consecutive_on > max_on)
+            {
+                max_on = consecutive_on;
+            }
+        }
+        else
+        {
+            consecutive_on = 0;
+        }
+    }
+
+    printf("Maximum consecutive ON = %d\n", max_on);
+
+    return 0;
+}

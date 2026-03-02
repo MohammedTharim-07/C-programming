@@ -1,0 +1,17 @@
+#include<stdio.h>
+int square(int n)
+{
+    return n*n;
+}
+int main()
+{
+    int number;
+    int result;
+printf("enter the number:");
+scanf("%d",&number);
+result=square(number);
+printf("Square=%d\n",result);
+return 0;
+  }
+  
+  

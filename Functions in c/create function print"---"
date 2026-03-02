@@ -1,1 +1,15 @@
+#include <stdio.h>
 
+void printLine()
+{
+    printf("-------------------\n");
+}
+
+int main()
+{
+    printLine();
+    printLine();
+    printLine();
+
+    return 0;
+}

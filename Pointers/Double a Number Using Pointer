@@ -1,0 +1,25 @@
+#include<stdio.h>
+void doubleValue(int *p)
+{
+    *p=*p*2;
+}
+int main()
+{
+    int x=15;
+    doubleValue(&x);
+    printf("%d",x);
+    return 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

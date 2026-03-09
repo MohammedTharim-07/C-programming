@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+struct student
+{
+    int roll;
+    float marks;
+};
+
+int main()
+{
+    struct student s[3];
+    float max;
+    int index = 0;
+
+    for(int i=0;i<3;i++)
+    {
+        printf("Enter roll: ");
+        scanf("%d",&s[i].roll);
+
+        printf("Enter marks: ");
+        scanf("%f",&s[i].marks);
+    }
+
+    max = s[0].marks;
+
+    for(int i=1;i<3;i++)
+    {
+        if(s[i].marks > max)
+        {
+            max = s[i].marks;
+            index = i;
+        }
+    }
+
+    printf("\nTop Student\n");
+    printf("Roll: %d\n",s[index].roll);
+    printf("Marks: %.2f\n",s[index].marks);
+
+    return 0;
+}

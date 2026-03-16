@@ -1,1 +1,13 @@
-
+#include<stdio.h>
+void counter()
+{
+    static int x=10;
+    x++;
+    printf("x=%d\n",x);
+}
+int main()
+{
+    counter();
+    counter();
+    return 0;
+}

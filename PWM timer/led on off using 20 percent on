@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+// LED ON
+void LED_ON()
+{
+    printf("LED ON\n");
+}
+
+// LED OFF
+void LED_OFF()
+{
+    printf("LED OFF\n");
+}
+
+// Delay function
+void delay_ms(int time)
+{
+    for(int i = 0; i < time * 1000; i++);
+}
+
+int main()
+{
+    while(1)
+    {
+        LED_ON();        // ON
+        delay_ms(4);     // 4 ms
+
+        LED_OFF();       // OFF
+        delay_ms(16);    // 16 ms
+    }
+
+    return 0;
+}

@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    typedef float marks;
+    {
+        marks d=94.3;
+        printf("marks:%f\n",d);
+        
+    }
+    return 0;
+}

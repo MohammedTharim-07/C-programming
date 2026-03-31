@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+unsigned int x=0xFFF0;
+int count=0;
+
+for(int i=0;i<16;i++)
+{
+    if(x&(1<<i))
+    count++;
+}
+printf("%d",count);
+return 0;
+}

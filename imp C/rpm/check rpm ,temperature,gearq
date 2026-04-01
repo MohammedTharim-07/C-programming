@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+
+int main() {
+unsigned int engine_rpm=7000;
+float oil_temperature=1.3;
+char gear_number='5';
+printf("engine rpm:%d\n",engine_rpm);
+printf("oil temperature:%.1f\n",oil_temperature);
+printf("gear number:%c\n",gear_number);
+
+
+    return 0;
+}

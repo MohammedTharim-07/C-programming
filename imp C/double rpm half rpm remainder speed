@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    unsigned int rpm = 3000;
+    float wheel_diameter = 0.6;   // metres
+
+    // Arithmetic operators
+    unsigned int doubled_rpm = rpm * 2;
+    unsigned int half_rpm    = rpm / 2;
+    unsigned int remainder   = rpm % 7;   // modulo = leftover after division
+
+    // Vehicle speed calculation (simplified)
+    float speed = (rpm * wheel_diameter * 3.14) / 60.0;
+
+    printf("Doubled RPM  : %u\n", doubled_rpm);
+    printf("Half RPM     : %u\n", half_rpm);
+    printf("Remainder    : %u\n", remainder);
+    printf("Speed        : %.2f m/s\n", speed);
+
+    return 0;
+}

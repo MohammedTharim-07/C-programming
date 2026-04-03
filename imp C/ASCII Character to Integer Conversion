@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    char ch='3';
+unsigned gear_number= ch-'0';
+char back=gear_number +'0';
+    printf("original char:%c\n",ch);
+        printf("To int:%u\n",gear_number);
+        printf("back to char:%c\n",back);
+        
+
+
+    return 0;
+}

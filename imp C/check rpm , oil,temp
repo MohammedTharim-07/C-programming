@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+    float battery_voltage=11.2;
+    int engine_rpm=800;
+    int oil_pressure=25;
+    if(battery_voltage<11.5)
+    {
+        printf("low battery warning\n");
+        }
+     if(engine_rpm<900)
+    {
+        printf("engine idle_unstable\n");
+    }
+     if(oil_pressure > 20 && oil_pressure<50)
+    {
+        printf("oil pressure normal\n");
+    }
+        else
+        {
+            printf("oil presuure fault\n");
+        }
+        return 0;
+        
+        }

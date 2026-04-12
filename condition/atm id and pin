@@ -1,0 +1,79 @@
+#include <stdio.h>
+
+
+int main()
+{
+    char id, option;
+    int password;
+    int balance = 10000, amount;
+
+    printf("Enter ID (a): ");
+    scanf(" %c", &id);
+
+    if(id == 'a')
+    {
+        printf("Enter Password: ");
+        scanf("%d", &password);
+
+        if(password == 1234)
+        {
+            printf("\nSelect Option:\n");
+            printf("c - Credit (Deposit)\n");
+            printf("w - Withdrawal\n");
+            printf("b - Balance Enquiry\n");
+
+            printf("Enter option: ");
+            scanf(" %c", &option);
+
+            // CREDIT
+            if(option == 'c')
+            {
+                printf("Enter amount to deposit: ");
+                scanf("%d", &amount);
+
+                balance = balance + amount;
+                printf("Amount credited successfully\n");
+                printf("New Balance = %d", balance);
+            }
+
+            // WITHDRAWAL
+            else if(option == 'w')
+            {
+                printf("Enter amount to withdraw: ");
+                scanf("%d", &amount);
+
+                if(amount <= balance)
+                {
+                    balance = balance - amount;
+                    printf("Amount withdrawn successfully\n");
+                    printf("Remaining Balance = %d", balance);
+                }
+                else
+                {
+                    printf("Insufficient Balance");
+                }
+            }
+
+            // BALANCE ENQUIRY
+            else if(option == 'b')
+            {
+                printf("Your Balance = %d", balance);
+            }
+
+            else
+            {
+                printf("Invalid Option");
+            }
+        }
+        else
+        {
+            printf("Wrong Password");
+        }
+    }
+    else
+    {
+        printf("Wrong ID");
+    }
+
+return 0;
+}

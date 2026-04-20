@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+int num=0,limit=0;
+
+printf("enter number:");
+scanf("%d",&limit);
+for(num=5;num>=0;num--)
+{
+printf("%d\n",num);
+}
+return 0;
+}

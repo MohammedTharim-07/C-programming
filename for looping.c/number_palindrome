@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+int num=0,limit=0;
+int rev;
+printf("Enter number:");
+scanf("%d",&limit);
+for(num=3;num>0;num--)
+{
+rev=limit%10*100+((limit/10)%10*10)+limit/100;
+}
+printf("rev=%d",rev);
+return 0;
+}

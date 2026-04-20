@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int num,limit;
+int fact=1;
+printf("enter the number:");
+scanf("%d",&limit);
+for(num=1;num<=limit;num++)
+{
+fact=fact*num;
+}
+printf("factorial=%d",fact);
+
+return 0;
+}

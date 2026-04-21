@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+int num=1,limit=0,count=0;;
+
+printf("enter the num:");
+scanf("%d",&limit);
+
+while(num<=limit)
+{
+if(limit%num==0)
+count++;
+num++;
+}
+ if(count==2)
+
+ printf("prime");
+ else
+
+ printf("not prime number\n");
+return 0;
+}

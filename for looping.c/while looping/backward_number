@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("enter the num:");
+    scanf("%d",&num);
+    while(num>=1)
+    {
+        printf("%d",num);
+        num--;
+    }
+    //printf("%d\n",num); 
+/* this is for the last digit to print 0  *\
+    return 0;
+}

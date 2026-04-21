@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+int row=0,col=0,limit;
+printf("enter the num:");
+scanf("%d",&limit);
+for(row=0;row<=limit;row++)
+{
+for(col=0;col<=limit;col++)
+{
+printf("*");
+}
+printf("\n");
+}
+return 0;
+}

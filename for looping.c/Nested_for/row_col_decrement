@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+int row,col,limit;
+
+printf("enter number:");
+scanf("%d",&limit);
+for(row=5;row>=limit;row--)
+{
+for(col=0;col<=limit;col++)
+{
+printf("*");
+}
+printf("\n");
+}
+return 0;
+}

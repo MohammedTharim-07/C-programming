@@ -1,0 +1,12 @@
+#include <stdio.h>
+int sub(int a,int b)
+{
+    return a-b;
+}
+int main()
+{
+    int ans; //variable created
+    ans =sub(30,20); //function call happens
+    printf("%d",ans);
+    return 0;
+}

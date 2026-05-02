@@ -1,0 +1,11 @@
+#include<stdio.h>
+int add()
+{
+int a=20,b=30;
+return a+b;
+}
+int main(){
+int result;
+result=add();
+printf("add=%d",result);
+}

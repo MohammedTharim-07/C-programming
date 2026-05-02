@@ -1,0 +1,20 @@
+#include<stdio.h>
+void swap(int a,int b);
+int main()
+{
+    int m=24,n=34;
+printf("value before swap m=%d\n  and n=%d",m,n);
+swap(m,n);
+}
+void swap(int a,int b)   /*function definition*/
+{
+int temp;
+temp=a;
+a=b;
+b=temp;
+
+printf("\n value after swap m=%d\n and n=%d\n",a,b);
+}
+
+
+

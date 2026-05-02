@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+int arr[5];
+int num=0;int limit=5;
+int sum=0;
+for(num=0;num<limit;num++)
+{
+printf("Enter Number:");
+scanf("%d",&arr[num]);
+}
+for(num=0;num<limit;num++)
+{
+sum+=arr[num];
+}
+printf("%d\n",sum);
+
+
+
+return 0;
+}

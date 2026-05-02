@@ -1,0 +1,39 @@
+
+#include<stdio.h>
+
+int main()
+{
+    int arr[5];
+    int limit=5, pos, val;
+
+    for(int num=0; num<limit;  num++)
+    {
+        printf("Enter element :");
+        scanf("%d", &arr[num]);
+    }
+
+    printf("Enter position): ");
+    scanf("%d", &pos);
+
+    printf("Enter value to insert: ");
+    scanf("%d", &val);
+
+
+    for(int num=limit; num>pos; num--)
+    {
+        arr[num] = arr[num-1];
+    }
+
+
+    arr[pos] = val;
+
+    limit++;
+
+
+    for(int num=0; num<limit; num++)
+    {
+        printf("%d ", arr[num]);
+    }
+
+    return 0;
+}

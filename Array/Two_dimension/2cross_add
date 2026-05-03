@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main()
+{
+
+    int A[2][2],B[2][2],C[2][2];
+
+    //First matrix
+    printf("Enter first matix:");
+    for(int i=0;i<2;i++)
+    {
+        for(int j=0;j<2;j++)
+        {
+            scanf("%d",&A[i][j]);
+        }
+    }
+
+    // second matrix
+  printf("Enter second matix:\n");
+  for(int i=0;i<2;i++)
+  {
+      for(int j=0;j<2;j++)
+      {
+          scanf("%d",&B[i][j]);
+      }
+  }
+    //add two value A and B
+    for(int i=0;i<2;i++)
+    {
+        for(int j=0;j<2;j++)
+        {
+            C[i][j]=A[i][j]+B[i][j];
+
+        }
+}
+
+// Print the output
+
+printf("Result:\n");
+for(int i=0;i<2;i++)
+{
+    for(int j=0;j<2;j++)
+{
+   printf("%d",C[i][j]);
+}
+printf("\n\t");
+}
+
+    return 0;
+}

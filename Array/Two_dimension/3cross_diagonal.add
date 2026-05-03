@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+int A[3][3];
+int sum=0;
+//First matix
+printf("Three cross matrix:");
+  for(int i=0;i<3;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            scanf("%d",&A[i][j]);
+        }
+    }
+    //add
+    for(int i=0;i<3;i++)
+    {
+    sum+=A[i][i];
+    }
+printf("Diagonal Sum=%d",sum);
+return 0;
+}

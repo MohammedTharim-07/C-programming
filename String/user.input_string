@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+//datatyp string_name [size]
+char str[15];
+int num=0,limit=6;
+printf("Enter the string:");
+
+for(num=0;num<=limit;num++)
+{
+scanf("%c",&str[num]);
+}
+for(num=0;num<=limit;num++)
+{
+printf("\n%c",str[num]);
+}
+return 0;
+}

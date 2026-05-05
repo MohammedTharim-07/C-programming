@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+char str[15]={'T','H','A','R','I','M'};
+int num=0;
+
+for(num=0;num<=6;num++)
+{
+printf("\n%c",str[num]);
+}
+return 0;
+}

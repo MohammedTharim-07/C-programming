@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#define ON  1
+#define OFF 0
+
+int TT_HB = OFF;
+
+int main()
+{
+    int switch_input;
+
+    printf("Enter switch status (0/1): ");
+    scanf("%d", &switch_input);
+
+    if(switch_input == ON)
+    {
+        TT_HB = ON;
+    }
+    else
+    {
+        TT_HB = OFF;
+    }
+
+    if(TT_HB == ON)
+    {
+        printf("HIGH BEAM LED ON\n");
+    }
+    else
+    {
+        printf("HIGH BEAM LED OFF\n");
+    }
+
+    return 0;
+}

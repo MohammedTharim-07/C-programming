@@ -1,0 +1,30 @@
+#include<stdio.h>
+typedef unsigned char U1;
+typedef struct // create new datatype
+{
+    union
+    {
+        U1 RAW_BYTE;
+        struct
+        {
+            U1 ECO_MODE  :1;
+            U1 RANGE_MODE :1;
+            U1 ABS_WARNING :1;
+            U1 RESERVED      :5;
+        }SIGNALS;
+    } CAN_BYTES;
+}CAN_MSG; // here same datatype created
+ 
+ int main()
+ {
+     CAN_MSG msg;//msg variable
+     
+    msg.CAN_BYTES.RAW_BYTE=0X05;
+    printf("RAW BYTE=%u\n",msg.CAN_BYTES.RAW_BYTE);
+    
+    printf("ECO_MODE=%u\n",msg.CAN_BYTES.SIGNALS.ECO_MODE);
+    
+    printf("RANGE MODE= %u\n",msg.CAN_BYTES.SIGNALS.RANGE_MODE);
+    printf("ABS WARNING=%u\n",msg.CAN_BYTES.SIGNALS.ABS_WARNING);
+    return 0;
+ }

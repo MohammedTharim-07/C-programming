@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+int var;
+printf("enter the number:");
+scanf("%d",&var);
+int *p;
+p=&var;
+
+
+printf("Value of variable is:%d",var);
+printf("\nValue of variable is:%d",*p);
+printf("\nAddress of Variable is:%p",&var);
+printf("\nAddress of variable:%p",p);
+printf("\nAddress of pointer p is :%p",&p);;
+return 0;
+
+}

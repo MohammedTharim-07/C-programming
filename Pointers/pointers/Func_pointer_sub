@@ -1,0 +1,13 @@
+#include<stdio.h>
+ int substraction (int num, int data) //  with return & with argument
+ {
+  return (num- data);  // here return
+ }
+ int main()
+ {
+ int result=0;
+ int(*fp)(int,int)=substraction;
+ result=fp(5,3);
+ printf("substraction value =%d\n",result);
+ return 0;
+ }

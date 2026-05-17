@@ -1,0 +1,20 @@
+#include<stdio.h>
+void sum(int *ptr,int *ptr1)
+{
+printf("Before changes %d\n %d\n",*ptr,*ptr1);
+*ptr=20;
+*ptr1=30;
+printf("After changes %d\n %d\n",*ptr,*ptr1);
+}
+int main()
+{
+int num=0,data=0;
+printf("Enter the value of num& data:");
+scanf("%d%d",&num,&data);
+
+printf("Before function call num=%d\n data=%d\n",num,data);
+
+sum(&num,&data);
+printf("After function call num=%d\n data=%d\n",num,data);
+return 0;
+}

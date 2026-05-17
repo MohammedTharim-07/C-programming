@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+int num=0;int *ptr;int **dptr;
+printf("Enter the value of num:");
+scanf("%d",&num);
+ptr=&num;
+dptr=&ptr;
+
+printf("\n num=%d\n",num);               // value
+printf("\n address of num=%u\n",&num);   // it stroes the address of num
+printf("ptr=%u\n",ptr);                  // Stores the variable address
+printf("&ptr=%u\n",&ptr);                 // ptr address
+printf("dptr=%u\n",dptr);                // stores the first pointer addess
+printf("&dptr =%u\n",&dptr);             // stores the double pointer address
+printf("*dptr=%u\n",*(dptr));            // print the value of first pointer
+printf("**dptr=%d\n",**dptr);            // this print the value of var eg(dptr->ptr->num)
+return 0;
+}

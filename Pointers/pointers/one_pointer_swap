@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    int *ptr;
+
+    printf("Enter a and b: ");
+    scanf("%d %d", &a, &b);
+
+    ptr = &a;
+
+    *ptr = *ptr + b;
+    b = *ptr - b;
+    *ptr = *ptr - b;
+
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    return 0;
+}

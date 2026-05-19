@@ -1,0 +1,18 @@
+#include<stdio.h>
+struct employe
+{
+int Reg_No;
+char name;
+float experience;
+float Salary;
+};
+int main()
+{
+struct employe s1={12,'N',3.5,16.2};
+struct employe s2={11,'M',4.5,24};
+printf("employe S1 Reg_no:%d\nemploye S2 Reg_no:%d\n\n",s1.Reg_No,s2.Reg_No);
+printf("employe S1 Name:%c\nemploye S2 Name:%c\n\n",s1.name,s2.name);
+printf("employe S1 experience:%.1f\nemploye S2 experience:%.1f\n\n",s1.experience,s2.experience);
+printf("employe S1 slary:%.1f\nemploye S2 salary:%.1f\n",s1.Salary,s2.Salary);
+return 0;
+}

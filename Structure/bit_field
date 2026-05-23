@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct DOB{
+unsigned int date:5;
+unsigned int month:3;
+unsigned int year:11;
+};
+int main()
+{
+
+struct DOB byte;
+printf("%d",sizeof(byte));
+return 0;
+
+}

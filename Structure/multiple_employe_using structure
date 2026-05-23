@@ -1,0 +1,46 @@
+#include<stdio.h>
+struct employe
+{
+int Reg_No;
+char name[30];
+float Salary;
+float experience;
+};
+int main()
+{
+struct employe s[3];
+for(int i=0;i<3;i++)
+{
+printf("\nEnter Employee %d Details\n",i+1);
+
+printf("Enter the reg_no:");
+scanf("%d",&s[i].Reg_No);
+
+printf("Enter the name:");
+scanf("%s",&s[i].name);
+
+printf("Enter the Salary:");
+scanf("%f",&s[i].Salary);
+
+printf("Enter the experience:");
+scanf("%f",&s[i].experience);
+}
+printf("\nEmploye details\n:");
+
+for(int i=0;i<3;i++)
+{
+printf("\nEmployee %d\n",i+1);
+
+
+printf("Reg_no=%d\n",s[i].Reg_No);
+printf("Name=%c\n",s[i].name);
+printf("Salary=%.2f\n",s[i].Salary);
+printf("Experience=%.2f\n",s[i].experience);
+}
+
+return 0;
+
+
+
+}
+

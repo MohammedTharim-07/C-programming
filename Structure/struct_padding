@@ -1,0 +1,21 @@
+#include<stdio.h>
+struct student
+{
+int reg_no;
+double  mark;
+//char name;
+//float CGPA;
+int id;
+
+//int id1;
+//int id2;
+//char name;
+//char c;
+//float percentage
+};
+int main()
+{
+struct student s1;
+printf("%d\n",sizeof(s1));
+return 0;
+}

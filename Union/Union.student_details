@@ -1,0 +1,15 @@
+#include<stdio.h>
+union student{
+
+int reg_no;
+char name[20];
+float CGPA;
+};
+int main()
+{
+
+union student s1;
+printf("%d\n",sizeof(s1));
+return 0;
+
+}

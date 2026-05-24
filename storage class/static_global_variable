@@ -1,0 +1,14 @@
+#include<stdio.h>
+static int a=10;
+static int b=20;
+void sum()
+{
+    printf("sum=%d\n",a+b);
+}
+int main()
+{
+
+    sum();
+
+
+}

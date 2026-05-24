@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+auto int i;
+{
+auto int i;
+{
+
+auto int i;
+printf("%d\n",i);
+}
+printf("%d\n",i);
+}
+printf("%d\n",i);
+return 0;
+}

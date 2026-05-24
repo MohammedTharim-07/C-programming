@@ -1,0 +1,9 @@
+#include<stdio.h>
+typedef unsigned int    integer;
+int main()
+{
+integer value=20;
+printf("%d",value);
+return 0;
+
+}

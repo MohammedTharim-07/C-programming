@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int num=153;
+    int armstrong=0;
+    int temp=num;
+    
+    while(num!=0)
+    {
+        int digit=num%10;
+        armstrong =armstrong+digit*digit*digit;
+        num=num/10;
+    }
+    if(armstrong==temp)
+    {
+        printf("Armstrong");
+    }
+    else
+    printf("Not armstrong");
+}

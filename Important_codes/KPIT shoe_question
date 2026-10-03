@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, temp;
+    int count = 0;
+    int duplicate = 0;
+
+    scanf("%d", &n);
+
+    int arr[n];
+
+    for(int i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    // Sort
+    for(int i = 0; i < n; i++)
+    {
+        for(int j = i + 1; j < n; j++)
+        {
+            if(arr[i] > arr[j])
+            {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    // Find repeated values
+    for(int i = 0; i < n - 1; i++)
+    {
+        if(arr[i] == arr[i + 1] && duplicate == 0)
+        {
+            count++;
+            duplicate = 1;
+        }
+
+        if(arr[i] != arr[i + 1])
+        {
+            duplicate = 0;
+        }
+    }
+
+    printf("Output = %d", count);
+
+    return 0;
+}

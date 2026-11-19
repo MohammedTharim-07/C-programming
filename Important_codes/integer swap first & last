@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+ int num=12345;
+    int temp=num; // keeping original 
+    int last=num%10 ; // we get last digit 5
+    int first;
+    int place=1;
+    int middle;
+    while(temp>=10)
+        {
+            temp/=10;
+            place*=10;
+            
+        }
+    first=temp; // now we have first and last next is middle
+    middle=(num%place)/10;
+    int result=last*place+middle*10+first;
+    printf("%d",result);
+ 
+}
